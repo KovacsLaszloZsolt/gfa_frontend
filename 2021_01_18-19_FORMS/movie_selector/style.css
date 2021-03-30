@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 100px;
+    
+}
+
+.container {
+    background-color: #ebbcbb;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 15px 15px #8390cc;
+    
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
