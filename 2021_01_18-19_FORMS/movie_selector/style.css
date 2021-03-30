@@ -15,7 +15,7 @@ body {
     background-color: #ebbcbb;
     padding: 50px;
     border-radius: 10px;
-    box-shadow: 15px 15px #8390cc;
+    box-shadow: 20px 20px #8390cc;
     
 }
 
@@ -26,4 +26,8 @@ h1 {
 form {
     display: flex;
     margin-bottom: 20px;
+}
+
+span {
+    color: #8390cc;
 }
