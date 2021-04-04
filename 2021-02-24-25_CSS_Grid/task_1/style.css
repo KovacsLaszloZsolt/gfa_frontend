@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.yellow {
+    padding-top: 75px;
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+    padding-top: 75px;
+}
+
+.grid-container {
+    font-size: 30px;
+    color: #fff;
+    display: grid;
+    height: 200px;
+    padding: 10px;
+    grid-template-columns: 1fr 3fr 1fr;
+    text-align: center;
+    background-color: purple;
+    column-gap: 10px;
+   
+}
