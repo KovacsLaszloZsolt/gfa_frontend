@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Workshop: CreateElement</title>
+</head>
+
+<body>
+    <ul class="aszteroidak">
+        <li id="b325" class="aszteroida">The King</li>
+        <li class="aszteroida b326">The Conceited Man</li>
+    </ul>
+    <div class="container">
+        <img src="" alt="">
+    </div>
+
+    <!--
+      Dolgozhatsz a html script tag-en belül, vagy külön js fájlban is,
+      utóbbi esetén ne felejtsd el beimportálni a js fájlt az alábbi módon:
+      <script src="createelement-1.js"></script>
+    -->
+    <script>
+        //   Adj hozzá egy elemet az aszteroida listához 'The Green Fox' tartalommal!
+        const ul = document.querySelector('.aszteroidak');
+        const tGFLi = document.createElement('li');
+        tGFLi.textContent = 'The Green Fox';
+        ul.appendChild(tGFLi);
+
+        //   Adj hozzá egy elemet az aszteroida listához 'The Lamplighter' tartalommal!
+        const tLLi = document.createElement('li');
+        tLLi.textContent = 'The Lamplighter';
+        ul.appendChild(tLLi);
+
+        //   Adj hozzá egy címsort (heading) a .container-hez 'Tudok elemeket hozzáadni
+        //   a DOM-hoz!' tartalommal!
+        const containerDiv = document.querySelector('.container');
+        const h1 = document.createElement('h1');
+        h1.innerHTML = 'Tudok elemeket hozzáadni a DOM-hoz!';
+        containerDiv.appendChild(h1);
+
+        //   Adj hozzá egy képet (bármilyen képet) a konténerhez!
+        const img = document.createElement('img');
+        img.setAttribute('src', './rainbow.jpg');
+
+        containerDiv.appendChild(img);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Workshop: CreateElement</title>
+</head>
+
+<body>
+    <main></main>
+
+    <!--
+      Dolgozhatsz a html script tag-en belül, vagy külön js fájlban is,
+      utóbbi esetén ne felejtsd el beimportálni a js fájlt az alábbi módon:
+      <script src="createelement-3.js"></script>
+      1. Hozz létre egy article tag-et minden gyereknek (kids lista).
+      2. Hozz létre egy h3 és egy p tag-et minden article-nek, és fűzd is hozzá.
+        - a H3-ban a tulajdonos neve legyen (owner)
+        - a p-ben az állat neve (petName)
+      3. Add hozzá az article tag-et a main-hez.
+      -->
+    <script>
+
+        const kids = [
+            { 'petName': 'Wattled crane', 'owner': 'Bryant' },
+            { 'petName': 'Devil, tasmanian', 'owner': 'Alejandro' },
+            { 'petName': 'Mynah, common', 'owner': 'Nelie' },
+            { 'petName': 'Dolphin, common', 'owner': 'Mariele' },
+            { 'petName': 'Gray duiker', 'owner': 'Maddalena' },
+            { 'petName': 'Crab (unidentified)', 'owner': 'Lucine' },
+            { 'petName': 'Ant (unidentified)', 'owner': 'Lorianna' },
+            { 'petName': 'Bison, american', 'owner': 'Tommie' },
+            { 'petName': 'Yellow mongoose', 'owner': 'Vivyan' },
+            { 'petName': 'Carpet snake', 'owner': 'Veda' },
+            { 'petName': 'Lesser mouse lemur', 'owner': 'Isidor' },
+        ];
+
+        const main = document.querySelector('main')
+
+        kids.forEach((elem) => {
+            const article = document.createElement('article');
+
+            const h3 = document.createElement('h3');
+            h3.textContent = elem.owner;
+
+            const p = document.createElement('p');
+            p.textContent = elem.petName;
+
+            article.appendChild(h3);
+            article.appendChild(p);
+
+            main.appendChild(article);
+        })
+
+    </script>
+</body>
+
+</html>

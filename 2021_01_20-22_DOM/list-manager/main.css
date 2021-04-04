@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    padding: 50px;
+}
+
+ul {
+    margin-left: 40px;
+    border: 1px solid #333333;
+}
+
+ul li {
+    list-style: none;
+    width: 100px;
+}
+
+ul:first-of-type li {
+    padding: 1px 0;
+}
+
+.selected {
+    background-color: #cdcdcd;
+}
+
+ul:nth-of-type(2) {
+    border: none;
+}
+
+ul:nth-of-type(2):hover {
+    cursor: pointer;
+}
+
+ul:nth-of-type(2) li {
+    border: 1px solid #939393;
+    text-align: center;
+    background-color: #e6e6e6;
+}
+
+
